@@ -8,15 +8,13 @@
     </head>
     <body>
         <!-- вся страница будет в одном контейнере -->
-        <div class="container">
-            <div class="row">
-                <!-- делаем самую простую вёрстку -->
-                <div class="col-md-12">
-                    <h2>Регистрация</h2>
-                    <p>Заполните все поля, чтобы создать новый аккаунт.</p>
-                    
-                </div>
-            </div>
-        </div>    
+        <button type="button" class="btn btn-primary" data-toggle="popover" title="Сообщение" data-content="Ура, Bootstrap 4 работает">Поднеси ко мне курсор</button>
+
+<!-- После подключения jQuery, Popper и Bootstrap JS -->
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover({trigger:'hover'});
+            });
+        </script>    
     </body>
 </html>
